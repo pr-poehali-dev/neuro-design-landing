@@ -9,6 +9,7 @@ const PortfolioSection = () => {
       result: "450 м²",
       metric: "Москва",
       description: "Проект дома с открытой планировкой, панорамными окнами и интеграцией природы в интерьер",
+      image: "https://cdn.poehali.dev/projects/22d2baf0-f63f-4747-bb4b-3c5c43aa4373/files/6cb9c2e2-f730-4bd8-b287-8a85d280c1ea.jpg",
     },
     {
       title: "Офис IT-компании",
@@ -16,6 +17,7 @@ const PortfolioSection = () => {
       result: "+40% продуктивности",
       metric: "800 м²",
       description: "Пространство с зонами для концентрации, коллабораций и отдыха на основе нейропсихологии",
+      image: "https://cdn.poehali.dev/projects/22d2baf0-f63f-4747-bb4b-3c5c43aa4373/files/57441f88-370a-46c1-82b6-cd25d7e0db26.jpg",
     },
     {
       title: "Флагманский магазин",
@@ -23,6 +25,7 @@ const PortfolioSection = () => {
       result: "+55% средний чек",
       metric: "300 м²",
       description: "Премиальный бутик с продуманной архитектурой движения покупателей и эмоциональными зонами",
+      image: "https://cdn.poehali.dev/projects/22d2baf0-f63f-4747-bb4b-3c5c43aa4373/files/0a8b6e79-f408-4d7e-a768-b770a5e8cec3.jpg",
     },
     {
       title: "Ресторан концептуальной кухни",
@@ -30,6 +33,7 @@ const PortfolioSection = () => {
       result: "+65% повторные визиты",
       metric: "250 м²",
       description: "Атмосферное пространство, где освещение, акустика и форма влияют на восприятие вкуса",
+      image: "https://cdn.poehali.dev/projects/22d2baf0-f63f-4747-bb4b-3c5c43aa4373/files/6d5d4de0-ab3a-4251-9770-8b74b4df88dd.jpg",
     },
   ];
 
@@ -56,7 +60,12 @@ const PortfolioSection = () => {
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
               <div className="h-64 bg-gradient-to-br from-secondary/30 to-primary/30 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex gap-2 mb-2">
                     <span className="px-3 py-1 bg-primary/90 text-xs font-bold rounded-full">
