@@ -20,19 +20,34 @@ const Index = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
+    let timeoutId: NodeJS.Timeout;
+
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !hasShownPopup) {
-        setShowExitPopup(true);
-        setHasShownPopup(true);
+      if (e.clientY <= 0 && !hasShownPopup && window.scrollY > 100) {
+        timeoutId = setTimeout(() => {
+          setShowExitPopup(true);
+          setHasShownPopup(true);
+        }, 300);
+      }
+    };
+
+    const handleMouseEnter = () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener("mouseenter", handleMouseEnter);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mouseenter", handleMouseEnter);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
   }, [hasShownPopup]);
 
