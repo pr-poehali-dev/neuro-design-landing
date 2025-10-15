@@ -14,20 +14,21 @@ const ExitPopup = ({ open, onOpenChange }: ExitPopupProps) => {
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Подождите!
+              Свяжитесь с нами!
             </span>
           </DialogTitle>
           <DialogDescription className="text-base">
-            Получите бесплатный PDF-гайд "5 Принципов Нейроархитектуры для Вашего Дома"
+            Мы проконсультируем вас по вашему проекту и ответим на все вопросы
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4 pt-4">
-          <Input placeholder="Ваш email" type="email" className="bg-background/50" />
+          <Input placeholder="Ваше имя" type="text" className="bg-background/50" />
+          <Input placeholder="Ваш телефон" type="tel" className="bg-background/50" />
           <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-            Скачать гайд бесплатно
+            Получить консультацию
           </Button>
           <p className="text-xs text-muted-foreground text-center">
-            Никакого спама. Только полезные материалы по архитектуре и дизайну пространств.
+            Наш специалист свяжется с вами в течение 24 часов
           </p>
         </div>
       </DialogContent>
