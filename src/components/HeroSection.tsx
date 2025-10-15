@@ -7,23 +7,24 @@ const HeroSection = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center space-y-8 animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight">
-            Создаем{" "}
+            Мы не просто делаем дизайн.{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              пространства
+              Мы создаем архитектуру, которая продает
             </span>
-            {" "}которые вдохновляют
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Архитектурный дизайн домов, офисов и коммерческих пространств на основе нейропсихологии и <span className="text-primary font-bold">принципов восприятия</span>
-          </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Neuro Design Architecture – когда архитектура влияет на эмоции, повышает продуктивность и создает атмосферу успеха.
+          <div className="inline-block px-8 py-3 bg-primary/10 border border-primary/30 rounded-full">
+            <p className="text-2xl md:text-3xl font-bold text-primary">
+              +25% к конверсии вашего бизнеса
+            </p>
+          </div>
+          <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto leading-relaxed font-medium">
+            Neuro Design Architecture — когда эстетика и нейронауки работают на вашу прибыль. Премиальный дизайн, обоснованный данными.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 h-auto">
-              Получить бесплатную консультацию
+            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-10 py-7 h-auto font-bold shadow-xl shadow-primary/30">
+              Получить бесплатный нейро-аудит вашего сайта
             </Button>
-            <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 text-lg px-8 py-6 h-auto">
+            <Button size="lg" variant="outline" className="border-2 border-primary/50 text-foreground hover:bg-primary/10 text-lg px-10 py-7 h-auto font-semibold">
               Смотреть портфолио
             </Button>
           </div>

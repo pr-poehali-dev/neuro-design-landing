@@ -4,32 +4,32 @@ import Icon from "@/components/ui/icon";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Александр и Анна Ивановы",
-      position: "Владельцы дома",
-      text: "Neuro Design Architecture создали для нас не просто дом, а пространство, где каждая комната наполнена светом и гармонией. Мы чувствуем себя умиротворенно и вдохновленно каждый день.",
-      result: "Частный дом 450 м²",
+      name: "Алексей Петров",
+      position: "CEO, StyleMarket",
+      text: "После редизайна конверсия выросла на 28%, а отказы упали на 35%. Neuro Design сделали именно то, о чем мы мечтали — красиво и продающе. Данные не врут: выручка +120% за 3 месяца.",
+      result: "+28% конверсия",
     },
     {
-      name: "Дмитрий Соколов",
-      position: "CEO, TechVision",
-      text: "После переезда в новый офис продуктивность команды выросла на 40%. Пространство действительно влияет на настроение и эффективность. Сотрудники стали реже болеть и больше времени проводят в офисе добровольно.",
-      result: "+40% продуктивности",
+      name: "Мария Смирнова",
+      position: "CMO, TechCorp Solutions",
+      text: "Мы хотели серьезный B2B-сайт, а получили машину по генерации лидов. +42% квалифицированных заявок, пользователи проводят на сайте на 2.3 минуты больше. Клиенты воспринимают нас как премиум-вендора.",
+      result: "+42% лидов",
     },
     {
-      name: "Елена Краснова",
-      position: "Владелица бутика LuxuryHub",
-      text: "Архитектура магазина работает на продажи. Покупатели проводят больше времени, средний чек вырос на 55%. Команда учла психологию восприятия люкса — это видно в каждой детали.",
-      result: "+55% средний чек",
+      name: "Дмитрий Карпов",
+      position: "Founder, MoneyFlow",
+      text: "За 2 недели после запуска нового лендинга регистрации выросли на 67%. Neuro Design сделали не просто красиво, а убедительно и достоверно. MRR вырос до $85K. Это лучшая инвестиция в маркетинг.",
+      result: "+67% регистраций",
     },
     {
-      name: "Игорь Волков",
-      position: "Владелец ресторана Fusion Space",
-      text: "Neuro Design создали атмосферу, которая усиливает впечатление от нашей кухни. Гости возвращаются не только за едой, но и за ощущениями. Повторные визиты выросли на 65%.",
-      result: "+65% повторных визитов",
+      name: "Анна Лебедева",
+      position: "Product Owner, HealthTrack App",
+      text: "После редизайна retention вырос на 53%, рейтинг в App Store поднялся до 4.8 звезд. Пользователи стали писать, что приложение мотивирует и возвращаться к нему каждый день. Это именно то, что нужно для health-продукта.",
+      result: "+53% Retention",
     },
   ];
 
-  const clientLogos = ["Семья Ивановых", "TechVision", "LuxuryHub", "Fusion Space", "Crystal Tower", "Green Valley"];
+  const clientLogos = ["StyleMarket", "TechCorp", "MoneyFlow", "HealthTrack", "FinanceHub", "CloudTech", "DataVision", "SmartRetail"];
 
   return (
     <section id="testimonials" className="py-32 px-6">
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
               <CardContent className="pt-6 space-y-4">
                 <div className="flex justify-between items-start">
                   <Icon name="Quote" className="text-primary" size={32} />
-                  <span className="px-3 py-1 bg-secondary/20 text-secondary text-xs font-bold rounded-full">
+                  <span className="px-4 py-2 bg-gradient-to-r from-primary to-secondary text-sm font-bold rounded-full shadow-lg">
                     {testimonial.result}
                   </span>
                 </div>
@@ -67,12 +67,15 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-8 justify-center items-center opacity-60">
-          {clientLogos.map((logo, idx) => (
-            <div key={idx} className="text-2xl font-bold">
-              {logo}
-            </div>
-          ))}
+        <div className="mt-20">
+          <p className="text-center text-muted-foreground mb-8 text-lg">Нам доверяют более 50+ компаний</p>
+          <div className="flex flex-wrap gap-8 justify-center items-center opacity-50 hover:opacity-80 transition-opacity">
+            {clientLogos.map((logo, idx) => (
+              <div key={idx} className="text-xl font-bold px-4 py-2 border border-border/30 rounded-lg">
+                {logo}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
