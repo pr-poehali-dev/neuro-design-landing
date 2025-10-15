@@ -4,32 +4,32 @@ import { Card, CardContent } from "@/components/ui/card";
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "E-commerce платформа",
-      client: "TechStore",
-      result: "+42% конверсии",
-      metric: "-28% отказов",
-      description: "Редизайн интернет-магазина с фокусом на путь пользователя",
+      title: "Частный дом в стиле минимализм",
+      client: "Семья Ивановых",
+      result: "450 м²",
+      metric: "Москва",
+      description: "Проект дома с открытой планировкой, панорамными окнами и интеграцией природы в интерьер",
     },
     {
-      title: "Финтех приложение",
-      client: "MoneyFlow",
-      result: "+65% регистраций",
-      metric: "+120% удержание",
-      description: "Упрощение онбординга и создание доверия через дизайн",
+      title: "Офис IT-компании",
+      client: "TechVision",
+      result: "+40% продуктивности",
+      metric: "800 м²",
+      description: "Пространство с зонами для концентрации, коллабораций и отдыха на основе нейропсихологии",
     },
     {
-      title: "SaaS лендинг",
-      client: "CloudSync",
-      result: "+38% лидов",
-      metric: "-45% стоимость лида",
-      description: "Архитектура продающей страницы на основе нейро-триггеров",
-    },
-    {
-      title: "Премиум маркетплейс",
+      title: "Флагманский магазин",
       client: "LuxuryHub",
       result: "+55% средний чек",
-      metric: "+32% повторные покупки",
-      description: "Создание премиального опыта через визуальную иерархию",
+      metric: "300 м²",
+      description: "Премиальный бутик с продуманной архитектурой движения покупателей и эмоциональными зонами",
+    },
+    {
+      title: "Ресторан концептуальной кухни",
+      client: "Fusion Space",
+      result: "+65% повторные визиты",
+      metric: "250 м²",
+      description: "Атмосферное пространство, где освещение, акустика и форма влияют на восприятие вкуса",
     },
   ];
 
@@ -38,13 +38,13 @@ const PortfolioSection = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-black mb-6">
-            Наши Работы:{" "}
+            Наши Проекты:{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Дизайн с Доказательствами
+              Пространства, Которые Работают
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Каждый проект — это архитектура, которая принесла клиентам измеримую прибыль
+            Дома, офисы, магазины и рестораны — каждый проект создан с учетом психологии человека
           </p>
         </div>
 
@@ -84,7 +84,7 @@ const PortfolioSection = () => {
 
         <div className="text-center mt-16">
           <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-            Смотреть все кейсы и ROI
+            Смотреть все проекты
           </Button>
         </div>
       </div>

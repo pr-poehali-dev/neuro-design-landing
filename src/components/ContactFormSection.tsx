@@ -10,13 +10,13 @@ const ContactFormSection = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-black mb-6">
-            Готовы сделать ваш бизнес{" "}
+            Готовы создать{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              архитектурным шедевром?
+              пространство мечты?
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Начните с бесплатного нейро-аудита, который покажет точки роста вашей конверсии. Без обязательств.
+            Получите бесплатную консультацию. Обсудим вашу задачу и предложим решения на основе нейроархитектуры.
           </p>
         </div>
 
@@ -40,13 +40,13 @@ const ContactFormSection = () => {
               <div className="space-y-2">
                 <label className="text-sm font-medium">Расскажите о вашем проекте</label>
                 <Textarea
-                  placeholder="Опишите кратко вашу задачу, текущую ситуацию и желаемый результат..."
+                  placeholder="Опишите ваш проект: дом, офис, магазин, ресторан. Укажите площадь, локацию и пожелания..."
                   rows={5}
                   className="bg-background/50"
                 />
               </div>
               <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg py-6 h-auto">
-                Получить бесплатный аудит и расчет стоимости
+                Получить консультацию и расчет стоимости
               </Button>
               <p className="text-sm text-muted-foreground text-center">
                 Ответим в течение 2 часов в рабочее время

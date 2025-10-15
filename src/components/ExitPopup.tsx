@@ -18,7 +18,7 @@ const ExitPopup = ({ open, onOpenChange }: ExitPopupProps) => {
             </span>
           </DialogTitle>
           <DialogDescription className="text-base">
-            Получите бесплатный PDF-гайд "5 Нейро-принципов продающего дизайна"
+            Получите бесплатный PDF-гайд "5 Принципов Нейроархитектуры для Вашего Дома"
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4 pt-4">
@@ -27,7 +27,7 @@ const ExitPopup = ({ open, onOpenChange }: ExitPopupProps) => {
             Скачать гайд бесплатно
           </Button>
           <p className="text-xs text-muted-foreground text-center">
-            Никакого спама. Только полезные материалы по дизайну и нейромаркетингу.
+            Никакого спама. Только полезные материалы по архитектуре и дизайну пространств.
           </p>
         </div>
       </DialogContent>

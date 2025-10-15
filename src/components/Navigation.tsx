@@ -13,7 +13,7 @@ const Navigation = ({ isScrolled }: NavigationProps) => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          NEURO DESIGN
+          NEURO DESIGN ARCHITECTURE
         </div>
         <div className="hidden md:flex items-center gap-8">
           <a href="#portfolio" className="text-sm hover:text-primary transition-colors">

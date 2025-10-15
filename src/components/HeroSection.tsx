@@ -7,20 +7,21 @@ const HeroSection = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center space-y-8 animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight">
-            Мы не просто делаем{" "}
+            Создаем{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              дизайн
+              пространства
             </span>
+            {" "}которые вдохновляют
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Мы создаем архитектуру, которая продает: <span className="text-primary font-bold">+25% к конверсии</span> вашего бизнеса
+            Архитектурный дизайн домов, офисов и коммерческих пространств на основе нейропсихологии и <span className="text-primary font-bold">принципов восприятия</span>
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Neuro Design Architecture – когда эстетика и нейронауки работают на вашу прибыль. Премиальный дизайн, обоснованный данными.
+            Neuro Design Architecture – когда архитектура влияет на эмоции, повышает продуктивность и создает атмосферу успеха.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 h-auto">
-              Получить бесплатный нейро-аудит
+              Получить бесплатную консультацию
             </Button>
             <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 text-lg px-8 py-6 h-auto">
               Смотреть портфолио
